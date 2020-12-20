@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css?family=Sulphur+Point&display=swap');
+* {font-family: 'Tomorrow', 'JetBrains Mono', Sulphur Point, Verdana, Geneva, Tahoma, monospace; margin: 0 0 0 0; padding: 0 0 0 0; color: #fff; transition: 250ms;}
+body {overflow: hidden;}
+body.inactive {background-color: #000;}
+@import url('https://fonts.googleapis.com/css2?family=Tomorrow:wght@100&display=swap');
+parry {position: fixed; top: 0vh; left: 0vw; width: 100vw; height: 100vh; opacity: 1;}
+parry.inactive {opacity: 0;}
+parry.active {z-index: 10;}
+/* latin-ext 
+@font-face {font-family: 'Tomorrow'; font-style: normal; font-weight: 100; font-display: swap; src: url(https://fonts.gstatic.com/s/tomorrow/v3/WBLgrETNbFtZCeGqgR2xS2zoKeqrgE9B0A.woff2) format('woff2'); unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+latin {}
+@font-face {font-family: 'Tomorrow'; font-style: normal; font-weight: 100;font-display: swap; src: url(https://fonts.gstatic.com/s/tomorrow/v3/WBLgrETNbFtZCeGqgR2xS2LoKeqrgE8.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/**/
+button {transition: 500ms; cursor: pointer; position: relative; display: inline-block; background-color: #bcdcab; width: 80vw; height: 25vh; left: 10vw; color: rgb(0, 43, 43); font-size: 5vh;}
+button:hover {background-color: #cdedbc; border-radius: 20%; border: #97ce00; border-width: 9px; border-style: solid;}
+#p {width: 15vw;}
+#p.inactive {opacity: 0; overflow: hidden; left: -15vw;}
+#headericon {float:inherit; margin-right:10px; max-width: 20%; max-height: 20%; background-color: #171717;}
+#headerimg {position: fixed; left: 65vw; top: 15px; width: calc(4vw * 4vh); height: calc(40vw * 40vh); image-rendering: crisp-edges;}
+#header {font-size: 3vw; transition: 500ms;}
+footer {position: fixed; bottom: 13px;}
+#button1 {background-color: #cdcdcd; margin: 10px; transition: 250ms; position: relative; top: 0vh; width: 20vw; color: #13a8cd; cursor: pointer; font-size: 2vw;; display: flex; justify-content: center; align-items: center;}
+#button2 {background-color: #676767; margin: 6px; transition: 250ms; position: relative; top: 0vh; width: 20vw; color: #6dd8f3; cursor: pointer; font-size: 2vw;; display: flex; justify-content: center; align-items: center;}
+span#blu {color: #0083a3; font-family: 'Tomorrow'; font-weight: '500';}
+span:hover {position: relative; background-color: rgb(144, 238, 255); color: #171717; transition: 125ms;}
+#button1:hover,#button2:hover,#submitbutton:hover {position: relative; width: 40vw; background-color: rgb(144, 238, 255); color: #171717; transition: 125ms;}
+input {border: 5px solid #171717;; -webkit-box-shadow: inset 0 0 8px  rgba(1,1,1,0.1), 0 0 16px rgba(1,1,1,0.1); -moz-box-shadow: inset 0 0 8px  rgba(1,1,1,0.1), 0 0 16px rgba(1,1,1,0.1); box-shadow: inset 0 0 8px  rgba(1,1,1,0.1), 0 0 16px rgba(0,0,0,0.1); padding: 15px; background: rgba(69, 212, 248, 0.5); margin: 0 0 10px 0; color: #fff; transition: 500ms;}
+div#button1.inactive,div#button2.inactive {position: relative; transition: 250ms; width: 0vw; background-color: rgba(144, 238, 255, 0); pointer-events: none; text-indent: 100%; white-space: nowrap; overflow: hidden;}
+#headericon:hover,img:hover {position: relative; background-color: rgb(144, 238, 255); color: #171717; transition: 125ms; cursor: pointer;}
+input.inactive {opacity: 0; pointer-events: none; display: none;}
+input:focus {position: relative; width: 20vw;}
+div#submitbutton.inactive {position: relative; transition: 250ms; width: 0vw; background-color: rgba(144, 238, 255, 0); pointer-events: none;}
+div#submitbutton {background-color: #cdcdcd; margin: 10px; transition: 250ms; position: relative; top: 0vh; width: 20vw; color: #13a8cd; cursor: pointer; font-size: 2vw;; display: flex; justify-content: center; align-items: center;}
+div#submitbutton.active {background-color: #cdcdcd; margin: 10px; transition: 250ms; position: relative; top: 0vh; width: 20vw; color: #13a8cd; cursor: pointer; font-size: 2vw;; display: flex; justify-content: center; align-items: center;}
+div#submitbutton:hover {position: relative; width: 40vw; background-color: rgb(144, 238, 255); color: #171717; transition: 125ms;}
+::placeholder {color: #fff; opacity: 1;}
